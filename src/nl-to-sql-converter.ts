@@ -111,8 +111,8 @@ export class NLToSQLConverter {
     const result = await this.api.runtime.agent.runEmbeddedPiAgent({
       sessionId: `shushu-${Date.now()}`,
       prompt,
-      provider: "anthropic",
-      model: "claude-haiku-4-5",
+      provider: "my-provide",
+      model: "Qwen",
       timeoutMs: 30_000,
       disableTools: true,
     });
