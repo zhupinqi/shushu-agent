@@ -1,0 +1,28 @@
+{
+  "id": "shushu-analytics",
+  "name": "数数数据分析",
+  "description": "通过自然语言查询数数科技（TA）数据，支持活跃用户、留存率、事件分析等",
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "shushuAnalytics": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "apiEndpoint": {
+            "type": "string",
+            "description": "数数 API 地址",
+            "default": "http://117.50.185.122:8992"
+          },
+          "maxResults": {
+            "type": "number",
+            "description": "最大返回结果数",
+            "default": 100
+          }
+        }
+      }
+    }
+  }
+}
